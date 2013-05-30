@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Run the following rake task from your application's root directory:
 
-  rake ratfink:init
+    rake ratfink:init
 
 
 ## Contributing
