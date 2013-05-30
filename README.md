@@ -18,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Initialization
+
+Run the following rake task from your application's root directory:
+
+  rake ratfink:init
+
 
 ## Contributing
 
