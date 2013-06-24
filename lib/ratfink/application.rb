@@ -1,11 +1,12 @@
 module Ratfink 
   
-  class Applicaton
+  class Application
+    def initialize(root)
+      @files = Dir.glob("#{root}/**/*_check.rb")
+    end
 
     def run
-      # init
-      # load files
-      
+      @files.each { |f| Ratfink::DSL.new(File.read(f)).run }
     end
 
   end

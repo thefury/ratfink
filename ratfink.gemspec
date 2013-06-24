@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Ratfink::VERSION
   gem.authors       = ["Trevor Oke"]
   gem.email         = ["trevor@trevoroke.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = "runs user defined consistency checks" 
+  gem.summary       = "ruby health monitoring" 
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

@@ -1,6 +1,6 @@
 require "ratfink/version"
-require "ratfink/check"
-require "ratfink/namespace"
+require "ratfink/application"
+require "ratfink/dsl"
 
 module Ratfink
   # Rake tasks 
