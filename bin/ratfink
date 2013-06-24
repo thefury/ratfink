@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-
 begin
   require 'rubygems'
   gem 'ratfink'
@@ -9,5 +8,4 @@ end
 
 require 'ratfink'
 
-
-Ratfink::Application.new.run
+Ratfink::Application.new(ARGV[0]).run
