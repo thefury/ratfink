@@ -11,6 +11,7 @@ component :integrations do
   check "integration point returns valid" do
   end
 
-  check "integration point returns quickly", :warn do
+  check "integration point returns quickly" do
+    puts "doing some work"
   end
 end

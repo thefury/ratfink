@@ -12,12 +12,15 @@ module Ratfink
       instance_eval(@source)
     end
 
-    def component(description)
+    def component(description, &block)
       puts description
+      #binding.pry
+      block.call if block
     end
 
-    def check(description)
+    def check(description, &block)
       puts description
+      block.call if block
     end
   end
 end

@@ -6,7 +6,7 @@ module Ratfink
     end
 
     def run
-      @files.each { |f| Ratfink::DSL.new(File.read(f)).run }
+      @files.each { |filename| Ratfink::DSL.new(File.read(filename)).run }
     end
 
   end

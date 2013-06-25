@@ -23,4 +23,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "guard-rspec", "~> 2.5"
   gem.add_development_dependency "rb-readline", "~> 0.4"
   gem.add_development_dependency "rb-inotify", "~> 0.9"
+  gem.add_development_dependency "pry"
 end
