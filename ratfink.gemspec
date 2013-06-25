@@ -18,10 +18,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency "rspec", "~> 2.6"
-  gem.add_development_dependency "guard", "~> 1.7"
-  gem.add_development_dependency "guard-rspec", "~> 2.5"
-  gem.add_development_dependency "rb-readline", "~> 0.4"
-  gem.add_development_dependency "rb-inotify", "~> 0.9"
-  gem.add_development_dependency "pry"
+  gem.add_dependency 'colorize', '~> 0.5'
+  gem.add_development_dependency 'rspec', '~> 2.6'
+  gem.add_development_dependency 'guard', '~> 1.7'
+  gem.add_development_dependency 'guard-rspec', '~> 2.5'
+  gem.add_development_dependency 'rb-readline', '~> 0.4'
+  gem.add_development_dependency 'rb-inotify', '~> 0.9'
 end

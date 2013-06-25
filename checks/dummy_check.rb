@@ -12,6 +12,6 @@ component :integrations do
   end
 
   check "integration point returns quickly" do
-    puts "doing some work"
+    true
   end
 end

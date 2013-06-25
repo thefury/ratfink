@@ -1,3 +1,5 @@
+require 'colorize'
+
 module Ratfink
   class DSL
     attr_accessor :source
@@ -13,14 +15,18 @@ module Ratfink
     end
 
     def component(description, &block)
-      puts description
-      #binding.pry
+      puts 
+      puts "==== #{description}"
+      
+      
       block.call if block
     end
 
     def check(description, &block)
-      puts description
-      block.call if block
+      res = block.call if block
+      outp = res ? '[P]'.green : '[F]'.red
+
+      puts "%-45s %3s" % [ description, outp ] 
     end
   end
 end
